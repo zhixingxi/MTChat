@@ -12,6 +12,23 @@
 		B234745C21ABDA4300C2689B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B234745A21ABDA4300C2689B /* Main.storyboard */; };
 		B234745E21ABDA4400C2689B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B234745D21ABDA4400C2689B /* Assets.xcassets */; };
 		B234746121ABDA4400C2689B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B234745F21ABDA4400C2689B /* LaunchScreen.storyboard */; };
+		B234746E21ABE11100C2689B /* MTChatBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234746D21ABE11100C2689B /* MTChatBarController.swift */; };
+		B234747121ABE1BA00C2689B /* MTUserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747021ABE1BA00C2689B /* MTUserType.swift */; };
+		B234747321ABE25C00C2689B /* MTChatBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747221ABE25C00C2689B /* MTChatBarView.swift */; };
+		B234747721ABE3EC00C2689B /* MTChatConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747621ABE3EC00C2689B /* MTChatConstant.swift */; };
+		B234747921ABE4E000C2689B /* MTChatEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747821ABE4E000C2689B /* MTChatEnums.swift */; };
+		B234748821ABE61000C2689B /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747D21ABE61000C2689B /* UIScrollView.swift */; };
+		B234748921ABE61000C2689B /* UIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747E21ABE61000C2689B /* UIImagePickerController.swift */; };
+		B234748A21ABE61000C2689B /* UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747F21ABE61000C2689B /* UIGestureRecognizer.swift */; };
+		B234748B21ABE61000C2689B /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748021ABE61000C2689B /* UIBarButtonItem.swift */; };
+		B234748C21ABE61000C2689B /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748121ABE61000C2689B /* UICollectionView.swift */; };
+		B234748D21ABE61000C2689B /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748221ABE61000C2689B /* UITableView.swift */; };
+		B234748E21ABE61000C2689B /* UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748321ABE61000C2689B /* UIPickerView.swift */; };
+		B234748F21ABE61000C2689B /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748421ABE61000C2689B /* Core.swift */; };
+		B234749021ABE61000C2689B /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748521ABE61000C2689B /* UIControl.swift */; };
+		B234749121ABE61000C2689B /* KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748621ABE61000C2689B /* KVO.swift */; };
+		B234749321ABE62900C2689B /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749221ABE62900C2689B /* Then.swift */; };
+		B234749621ABE89300C2689B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749521ABE89300C2689B /* UIColorExtension.swift */; };
 		DA59AF76E664A602A15DB872 /* Pods_MTChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9530A94A671CABA0310AB781 /* Pods_MTChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +41,24 @@
 		B234745D21ABDA4400C2689B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B234746021ABDA4400C2689B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B234746221ABDA4400C2689B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B234746D21ABE11100C2689B /* MTChatBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatBarController.swift; sourceTree = "<group>"; };
+		B234747021ABE1BA00C2689B /* MTUserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUserType.swift; sourceTree = "<group>"; };
+		B234747221ABE25C00C2689B /* MTChatBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatBarView.swift; sourceTree = "<group>"; };
+		B234747621ABE3EC00C2689B /* MTChatConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatConstant.swift; sourceTree = "<group>"; };
+		B234747821ABE4E000C2689B /* MTChatEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatEnums.swift; sourceTree = "<group>"; };
+		B234747D21ABE61000C2689B /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		B234747E21ABE61000C2689B /* UIImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImagePickerController.swift; sourceTree = "<group>"; };
+		B234747F21ABE61000C2689B /* UIGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureRecognizer.swift; sourceTree = "<group>"; };
+		B234748021ABE61000C2689B /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
+		B234748121ABE61000C2689B /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		B234748221ABE61000C2689B /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		B234748321ABE61000C2689B /* UIPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPickerView.swift; sourceTree = "<group>"; };
+		B234748421ABE61000C2689B /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		B234748521ABE61000C2689B /* UIControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
+		B234748621ABE61000C2689B /* KVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVO.swift; sourceTree = "<group>"; };
+		B234748721ABE61000C2689B /* Closures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Closures.h; sourceTree = "<group>"; };
+		B234749221ABE62900C2689B /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		B234749521ABE89300C2689B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.release.xcconfig"; sourceTree = "<group>"; };
 		E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +113,7 @@
 		B234745521ABDA4300C2689B /* MTChat */ = {
 			isa = PBXGroup;
 			children = (
+				B234746821ABDEBB00C2689B /* Classes */,
 				B234745621ABDA4300C2689B /* AppDelegate.swift */,
 				B234745821ABDA4300C2689B /* ViewController.swift */,
 				B234745A21ABDA4300C2689B /* Main.storyboard */,
@@ -86,6 +122,119 @@
 				B234746221ABDA4400C2689B /* Info.plist */,
 			);
 			path = MTChat;
+			sourceTree = "<group>";
+		};
+		B234746821ABDEBB00C2689B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B234747A21ABE5F100C2689B /* Vendor */,
+				B234747521ABE3C700C2689B /* Constant */,
+				B234747421ABE29D00C2689B /* Extension */,
+				B234746F21ABE14C00C2689B /* Protocols */,
+				B234746921ABE06400C2689B /* Chat */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B234746921ABE06400C2689B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				B234746A21ABE07400C2689B /* Input */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		B234746A21ABE07400C2689B /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				B234746C21ABE0B800C2689B /* View */,
+				B234746B21ABE0B000C2689B /* Controller */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		B234746B21ABE0B000C2689B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B234746D21ABE11100C2689B /* MTChatBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B234746C21ABE0B800C2689B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B234747221ABE25C00C2689B /* MTChatBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B234746F21ABE14C00C2689B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B234747021ABE1BA00C2689B /* MTUserType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B234747421ABE29D00C2689B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B234749521ABE89300C2689B /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B234747521ABE3C700C2689B /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B234747621ABE3EC00C2689B /* MTChatConstant.swift */,
+				B234747821ABE4E000C2689B /* MTChatEnums.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		B234747A21ABE5F100C2689B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B234749421ABE62D00C2689B /* Then */,
+				B234747B21ABE61000C2689B /* Closures */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B234747B21ABE61000C2689B /* Closures */ = {
+			isa = PBXGroup;
+			children = (
+				B234747C21ABE61000C2689B /* Source */,
+				B234748721ABE61000C2689B /* Closures.h */,
+			);
+			path = Closures;
+			sourceTree = "<group>";
+		};
+		B234747C21ABE61000C2689B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B234747D21ABE61000C2689B /* UIScrollView.swift */,
+				B234747E21ABE61000C2689B /* UIImagePickerController.swift */,
+				B234747F21ABE61000C2689B /* UIGestureRecognizer.swift */,
+				B234748021ABE61000C2689B /* UIBarButtonItem.swift */,
+				B234748121ABE61000C2689B /* UICollectionView.swift */,
+				B234748221ABE61000C2689B /* UITableView.swift */,
+				B234748321ABE61000C2689B /* UIPickerView.swift */,
+				B234748421ABE61000C2689B /* Core.swift */,
+				B234748521ABE61000C2689B /* UIControl.swift */,
+				B234748621ABE61000C2689B /* KVO.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B234749421ABE62D00C2689B /* Then */ = {
+			isa = PBXGroup;
+			children = (
+				B234749221ABE62900C2689B /* Then.swift */,
+			);
+			path = Then;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +366,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B234745921ABDA4300C2689B /* ViewController.swift in Sources */,
+				B234747121ABE1BA00C2689B /* MTUserType.swift in Sources */,
+				B234749121ABE61000C2689B /* KVO.swift in Sources */,
 				B234745721ABDA4300C2689B /* AppDelegate.swift in Sources */,
+				B234749621ABE89300C2689B /* UIColorExtension.swift in Sources */,
+				B234748F21ABE61000C2689B /* Core.swift in Sources */,
+				B234748A21ABE61000C2689B /* UIGestureRecognizer.swift in Sources */,
+				B234746E21ABE11100C2689B /* MTChatBarController.swift in Sources */,
+				B234747921ABE4E000C2689B /* MTChatEnums.swift in Sources */,
+				B234748E21ABE61000C2689B /* UIPickerView.swift in Sources */,
+				B234748C21ABE61000C2689B /* UICollectionView.swift in Sources */,
+				B234749321ABE62900C2689B /* Then.swift in Sources */,
+				B234749021ABE61000C2689B /* UIControl.swift in Sources */,
+				B234748921ABE61000C2689B /* UIImagePickerController.swift in Sources */,
+				B234748B21ABE61000C2689B /* UIBarButtonItem.swift in Sources */,
+				B234748821ABE61000C2689B /* UIScrollView.swift in Sources */,
+				B234748D21ABE61000C2689B /* UITableView.swift in Sources */,
+				B234747721ABE3EC00C2689B /* MTChatConstant.swift in Sources */,
+				B234747321ABE25C00C2689B /* MTChatBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
