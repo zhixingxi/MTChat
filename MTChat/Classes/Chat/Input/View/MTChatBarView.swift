@@ -23,7 +23,7 @@ class MTChatBarView: UIView {
 
 //MARK: - Property
     /// 输入类型
-    var keyboardType: MTChatEnums.keyboardType = .noting
+    var keyboardType: MTChatEnums.KeyboardType = .noting
     var inputTextViewCurrentHeight = MTInputBarConstant.barOriginHeight
     weak var delegate: MTChatBarViewDelegate?
     /// 语音按钮

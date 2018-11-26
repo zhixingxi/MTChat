@@ -32,6 +32,8 @@
 		B234749921ABF4F200C2689B /* MTLogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749821ABF4F200C2689B /* MTLogUtil.swift */; };
 		B234749B21ABF9CB00C2689B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749A21ABF9CB00C2689B /* UIViewExtension.swift */; };
 		B234749D21ABFDF900C2689B /* MTChatNoticeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749C21ABFDF900C2689B /* MTChatNoticeName.swift */; };
+		B234749F21AC0C0800C2689B /* MTChatMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749E21AC0C0800C2689B /* MTChatMoreCell.swift */; };
+		B23474A121AC10CD00C2689B /* MTChatHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474A021AC10CD00C2689B /* MTChatHorizontalLayout.swift */; };
 		DA59AF76E664A602A15DB872 /* Pods_MTChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9530A94A671CABA0310AB781 /* Pods_MTChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		B234749821ABF4F200C2689B /* MTLogUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTLogUtil.swift; sourceTree = "<group>"; };
 		B234749A21ABF9CB00C2689B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		B234749C21ABFDF900C2689B /* MTChatNoticeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatNoticeName.swift; sourceTree = "<group>"; };
+		B234749E21AC0C0800C2689B /* MTChatMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatMoreCell.swift; sourceTree = "<group>"; };
+		B23474A021AC10CD00C2689B /* MTChatHorizontalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatHorizontalLayout.swift; sourceTree = "<group>"; };
 		CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.release.xcconfig"; sourceTree = "<group>"; };
 		E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				B234747221ABE25C00C2689B /* MTChatBarView.swift */,
+				B234749E21AC0C0800C2689B /* MTChatMoreCell.swift */,
+				B23474A021AC10CD00C2689B /* MTChatHorizontalLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23474A121AC10CD00C2689B /* MTChatHorizontalLayout.swift in Sources */,
 				B234745921ABDA4300C2689B /* ViewController.swift in Sources */,
 				B234747121ABE1BA00C2689B /* MTUserType.swift in Sources */,
 				B234749121ABE61000C2689B /* KVO.swift in Sources */,
@@ -404,6 +411,7 @@
 				B234749B21ABF9CB00C2689B /* UIViewExtension.swift in Sources */,
 				B234747721ABE3EC00C2689B /* MTChatConstant.swift in Sources */,
 				B234747321ABE25C00C2689B /* MTChatBarView.swift in Sources */,
+				B234749F21AC0C0800C2689B /* MTChatMoreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
