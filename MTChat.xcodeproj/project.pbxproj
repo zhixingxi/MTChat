@@ -12,9 +12,11 @@
 		B234745C21ABDA4300C2689B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B234745A21ABDA4300C2689B /* Main.storyboard */; };
 		B234745E21ABDA4400C2689B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B234745D21ABDA4400C2689B /* Assets.xcassets */; };
 		B234746121ABDA4400C2689B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B234745F21ABDA4400C2689B /* LaunchScreen.storyboard */; };
+		DA59AF76E664A602A15DB872 /* Pods_MTChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9530A94A671CABA0310AB781 /* Pods_MTChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9530A94A671CABA0310AB781 /* Pods_MTChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B234745321ABDA4300C2689B /* MTChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B234745621ABDA4300C2689B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B234745821ABDA4300C2689B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		B234745D21ABDA4400C2689B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B234746021ABDA4400C2689B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B234746221ABDA4400C2689B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.release.xcconfig"; sourceTree = "<group>"; };
+		E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA59AF76E664A602A15DB872 /* Pods_MTChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73C62A6C7A498EF20C16968E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9530A94A671CABA0310AB781 /* Pods_MTChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A49D8A67F119EF0C3253812A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */,
+				CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B234744A21ABDA4300C2689B = {
 			isa = PBXGroup;
 			children = (
 				B234745521ABDA4300C2689B /* MTChat */,
 				B234745421ABDA4300C2689B /* Products */,
+				A49D8A67F119EF0C3253812A /* Pods */,
+				73C62A6C7A498EF20C16968E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B234746521ABDA4400C2689B /* Build configuration list for PBXNativeTarget "MTChat" */;
 			buildPhases = (
+				26546555C3B96989202F60C9 /* [CP] Check Pods Manifest.lock */,
 				B234744F21ABDA4300C2689B /* Sources */,
 				B234745021ABDA4300C2689B /* Frameworks */,
 				B234745121ABDA4300C2689B /* Resources */,
+				7F669F4D743DD8A6A6416CA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26546555C3B96989202F60C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F669F4D743DD8A6A6416CA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MTChat/Pods-MTChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTChat/Pods-MTChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B234744F21ABDA4300C2689B /* Sources */ = {
@@ -280,6 +361,7 @@
 		};
 		B234746621ABDA4400C2689B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +380,7 @@
 		};
 		B234746721ABDA4400C2689B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
