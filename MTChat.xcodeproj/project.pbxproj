@@ -29,6 +29,9 @@
 		B234749121ABE61000C2689B /* KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748621ABE61000C2689B /* KVO.swift */; };
 		B234749321ABE62900C2689B /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749221ABE62900C2689B /* Then.swift */; };
 		B234749621ABE89300C2689B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749521ABE89300C2689B /* UIColorExtension.swift */; };
+		B234749921ABF4F200C2689B /* MTLogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749821ABF4F200C2689B /* MTLogUtil.swift */; };
+		B234749B21ABF9CB00C2689B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749A21ABF9CB00C2689B /* UIViewExtension.swift */; };
+		B234749D21ABFDF900C2689B /* MTChatNoticeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749C21ABFDF900C2689B /* MTChatNoticeName.swift */; };
 		DA59AF76E664A602A15DB872 /* Pods_MTChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9530A94A671CABA0310AB781 /* Pods_MTChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,9 @@
 		B234748721ABE61000C2689B /* Closures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Closures.h; sourceTree = "<group>"; };
 		B234749221ABE62900C2689B /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		B234749521ABE89300C2689B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		B234749821ABF4F200C2689B /* MTLogUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTLogUtil.swift; sourceTree = "<group>"; };
+		B234749A21ABF9CB00C2689B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		B234749C21ABFDF900C2689B /* MTChatNoticeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatNoticeName.swift; sourceTree = "<group>"; };
 		CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.release.xcconfig"; sourceTree = "<group>"; };
 		E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +133,7 @@
 		B234746821ABDEBB00C2689B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B234749721ABF4DE00C2689B /* Global */,
 				B234747A21ABE5F100C2689B /* Vendor */,
 				B234747521ABE3C700C2689B /* Constant */,
 				B234747421ABE29D00C2689B /* Extension */,
@@ -181,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				B234749521ABE89300C2689B /* UIColorExtension.swift */,
+				B234749A21ABF9CB00C2689B /* UIViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 			children = (
 				B234747621ABE3EC00C2689B /* MTChatConstant.swift */,
 				B234747821ABE4E000C2689B /* MTChatEnums.swift */,
+				B234749C21ABFDF900C2689B /* MTChatNoticeName.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -235,6 +244,14 @@
 				B234749221ABE62900C2689B /* Then.swift */,
 			);
 			path = Then;
+			sourceTree = "<group>";
+		};
+		B234749721ABF4DE00C2689B /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				B234749821ABF4F200C2689B /* MTLogUtil.swift */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,9 +385,11 @@
 				B234745921ABDA4300C2689B /* ViewController.swift in Sources */,
 				B234747121ABE1BA00C2689B /* MTUserType.swift in Sources */,
 				B234749121ABE61000C2689B /* KVO.swift in Sources */,
+				B234749921ABF4F200C2689B /* MTLogUtil.swift in Sources */,
 				B234745721ABDA4300C2689B /* AppDelegate.swift in Sources */,
 				B234749621ABE89300C2689B /* UIColorExtension.swift in Sources */,
 				B234748F21ABE61000C2689B /* Core.swift in Sources */,
+				B234749D21ABFDF900C2689B /* MTChatNoticeName.swift in Sources */,
 				B234748A21ABE61000C2689B /* UIGestureRecognizer.swift in Sources */,
 				B234746E21ABE11100C2689B /* MTChatBarController.swift in Sources */,
 				B234747921ABE4E000C2689B /* MTChatEnums.swift in Sources */,
@@ -382,6 +401,7 @@
 				B234748B21ABE61000C2689B /* UIBarButtonItem.swift in Sources */,
 				B234748821ABE61000C2689B /* UIScrollView.swift in Sources */,
 				B234748D21ABE61000C2689B /* UITableView.swift in Sources */,
+				B234749B21ABF9CB00C2689B /* UIViewExtension.swift in Sources */,
 				B234747721ABE3EC00C2689B /* MTChatConstant.swift in Sources */,
 				B234747321ABE25C00C2689B /* MTChatBarView.swift in Sources */,
 			);
