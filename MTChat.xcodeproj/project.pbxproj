@@ -35,6 +35,11 @@
 		B234749F21AC0C0800C2689B /* MTChatMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749E21AC0C0800C2689B /* MTChatMoreCell.swift */; };
 		B23474A121AC10CD00C2689B /* MTChatHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474A021AC10CD00C2689B /* MTChatHorizontalLayout.swift */; };
 		B23474A321ACD24400C2689B /* MTChatMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474A221ACD24400C2689B /* MTChatMoreView.swift */; };
+		B23474A521ACDD3100C2689B /* MTEmotionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474A421ACDD3100C2689B /* MTEmotionType.swift */; };
+		B23474A721ACDF3D00C2689B /* MTChatEmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474A621ACDF3D00C2689B /* MTChatEmotionCell.swift */; };
+		B23474A921ACE08A00C2689B /* MTChatEmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474A821ACE08A00C2689B /* MTChatEmotionView.swift */; };
+		B23474AC21ACE9AF00C2689B /* MTEmotionHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474AB21ACE9AF00C2689B /* MTEmotionHelp.swift */; };
+		B23474AF21ACEA0000C2689B /* MTChatEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474AE21ACEA0000C2689B /* MTChatEmotion.swift */; };
 		DA59AF76E664A602A15DB872 /* Pods_MTChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9530A94A671CABA0310AB781 /* Pods_MTChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +76,11 @@
 		B234749E21AC0C0800C2689B /* MTChatMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatMoreCell.swift; sourceTree = "<group>"; };
 		B23474A021AC10CD00C2689B /* MTChatHorizontalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatHorizontalLayout.swift; sourceTree = "<group>"; };
 		B23474A221ACD24400C2689B /* MTChatMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatMoreView.swift; sourceTree = "<group>"; };
+		B23474A421ACDD3100C2689B /* MTEmotionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTEmotionType.swift; sourceTree = "<group>"; };
+		B23474A621ACDF3D00C2689B /* MTChatEmotionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatEmotionCell.swift; sourceTree = "<group>"; };
+		B23474A821ACE08A00C2689B /* MTChatEmotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatEmotionView.swift; sourceTree = "<group>"; };
+		B23474AB21ACE9AF00C2689B /* MTEmotionHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTEmotionHelp.swift; sourceTree = "<group>"; };
+		B23474AE21ACEA0000C2689B /* MTChatEmotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatEmotion.swift; sourceTree = "<group>"; };
 		CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.release.xcconfig"; sourceTree = "<group>"; };
 		E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +170,8 @@
 		B234746A21ABE07400C2689B /* Input */ = {
 			isa = PBXGroup;
 			children = (
+				B23474AA21ACE99600C2689B /* Helps */,
+				B23474AD21ACE9F000C2689B /* Model */,
 				B234746C21ABE0B800C2689B /* View */,
 				B234746B21ABE0B000C2689B /* Controller */,
 			);
@@ -180,6 +192,8 @@
 				B234747221ABE25C00C2689B /* MTChatBarView.swift */,
 				B23474A221ACD24400C2689B /* MTChatMoreView.swift */,
 				B234749E21AC0C0800C2689B /* MTChatMoreCell.swift */,
+				B23474A821ACE08A00C2689B /* MTChatEmotionView.swift */,
+				B23474A621ACDF3D00C2689B /* MTChatEmotionCell.swift */,
 				B23474A021AC10CD00C2689B /* MTChatHorizontalLayout.swift */,
 			);
 			path = View;
@@ -189,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				B234747021ABE1BA00C2689B /* MTUserType.swift */,
+				B23474A421ACDD3100C2689B /* MTEmotionType.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -261,6 +276,22 @@
 				B234749821ABF4F200C2689B /* MTLogUtil.swift */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		B23474AA21ACE99600C2689B /* Helps */ = {
+			isa = PBXGroup;
+			children = (
+				B23474AB21ACE9AF00C2689B /* MTEmotionHelp.swift */,
+			);
+			path = Helps;
+			sourceTree = "<group>";
+		};
+		B23474AD21ACE9F000C2689B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B23474AE21ACEA0000C2689B /* MTChatEmotion.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B23474A121AC10CD00C2689B /* MTChatHorizontalLayout.swift in Sources */,
+				B23474AC21ACE9AF00C2689B /* MTEmotionHelp.swift in Sources */,
 				B234745921ABDA4300C2689B /* ViewController.swift in Sources */,
 				B234747121ABE1BA00C2689B /* MTUserType.swift in Sources */,
 				B234749121ABE61000C2689B /* KVO.swift in Sources */,
@@ -407,12 +439,16 @@
 				B234748C21ABE61000C2689B /* UICollectionView.swift in Sources */,
 				B234749321ABE62900C2689B /* Then.swift in Sources */,
 				B234749021ABE61000C2689B /* UIControl.swift in Sources */,
+				B23474A721ACDF3D00C2689B /* MTChatEmotionCell.swift in Sources */,
 				B234748921ABE61000C2689B /* UIImagePickerController.swift in Sources */,
 				B23474A321ACD24400C2689B /* MTChatMoreView.swift in Sources */,
 				B234748B21ABE61000C2689B /* UIBarButtonItem.swift in Sources */,
 				B234748821ABE61000C2689B /* UIScrollView.swift in Sources */,
+				B23474A921ACE08A00C2689B /* MTChatEmotionView.swift in Sources */,
 				B234748D21ABE61000C2689B /* UITableView.swift in Sources */,
 				B234749B21ABF9CB00C2689B /* UIViewExtension.swift in Sources */,
+				B23474A521ACDD3100C2689B /* MTEmotionType.swift in Sources */,
+				B23474AF21ACEA0000C2689B /* MTChatEmotion.swift in Sources */,
 				B234747721ABE3EC00C2689B /* MTChatConstant.swift in Sources */,
 				B234747321ABE25C00C2689B /* MTChatBarView.swift in Sources */,
 				B234749F21AC0C0800C2689B /* MTChatMoreCell.swift in Sources */,

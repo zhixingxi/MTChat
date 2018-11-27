@@ -21,6 +21,7 @@ protocol MTChatMoreViewDelegate: NSObjectProtocol {
     func chatMoreView(moreView: MTChatMoreView, didSelectedType type: MTChatEnums.MoreType)
 }
 
+/// 更多页面
 class MTChatMoreView: UIView {
     
     weak var delegate: MTChatMoreViewDelegate?
@@ -37,7 +38,7 @@ class MTChatMoreView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        setupViews()
     }
     
     required init?(coder aDecoder: NSCoder) {
