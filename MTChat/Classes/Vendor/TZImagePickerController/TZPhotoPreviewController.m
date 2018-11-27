@@ -404,6 +404,7 @@
     if (self.doneButtonClickBlockWithPreviewType) {
         self.doneButtonClickBlockWithPreviewType(self.photos,_tzImagePickerVc.selectedAssets,self.isSelectOriginalPhoto);
     }
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 - (void)originalPhotoButtonClick {

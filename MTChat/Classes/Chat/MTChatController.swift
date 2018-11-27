@@ -65,6 +65,10 @@ class MTChatController: UIViewController {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = true
     }
+    
+    deinit {
+        MTLog("释放")
+    }
 }
 
 // MARK: - 初始化

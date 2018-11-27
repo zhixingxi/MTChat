@@ -35,10 +35,6 @@ class MTChatBarController: UIViewController {
     
     weak var delegate: MTChatBarControllerDelegate?
     
-    lazy var imgPickerVC: TZImagePickerController = { [unowned self] in
-        return TZImagePickerController(maxImagesCount: 9, columnNumber: 4, delegate: self)
-        }()
-    
     
     // MARK:- init
     init(user: MTUserType?) {
@@ -176,7 +172,19 @@ extension MTChatBarController: MTChatMoreViewDelegate {
     func chatMoreView(moreView: MTChatMoreView, didSelectedType type: MTChatEnums.MoreType) {
         switch type {
         case .pic:
-            self.present(imgPickerVC, animated: true, completion: nil)
+            let vc = TZImagePickerController(maxImagesCount: 9, columnNumber: 4, delegate: self)
+            vc?.allowTakeVideo = false
+            vc?.allowPickingVideo = false
+            self.present(vc!, animated: true, completion: nil)
+        case .camera:
+            if hasPermissionToGetCamera() {
+                MTLog("相机权限未打开")
+            }
+            let vc = UIImagePickerController()
+            vc.sourceType = UIImagePickerController.SourceType.camera
+            vc.delegate = self
+            vc.modalPresentationStyle = .custom
+            self.present(vc, animated: true, completion: nil)
         default:
             break
         }
@@ -191,5 +199,29 @@ extension MTChatBarController: TZImagePickerControllerDelegate {
             //FIXME: - 发送图片
             MTLog("发送图片")
         }
+    }
+}
+
+// MARK: - UIImagePickerControllerDelegate
+extension MTChatBarController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let _ = info[UIImagePickerController.InfoKey.originalImage]
+        //FIXME: - 发送图片
+        MTLog("发送图片")
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    private func  hasPermissionToGetCamera() -> Bool {
+        var hasPermission = false
+        let authStatus = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
+        if authStatus == .restricted || authStatus == .denied {
+            hasPermission = false
+        }
+        return hasPermission
     }
 }

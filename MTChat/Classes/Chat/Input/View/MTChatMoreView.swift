@@ -32,7 +32,7 @@ class MTChatMoreView: UIView {
     
     private var dataSource: [(name: String, icon: UIImage, type: MTChatEnums.MoreType)] = [
         ("照片", UIImage(named: "sharemore_pic")!, .pic),
-        ("相机", UIImage(named: "sharemore_video")!, .video),
+        ("相机", UIImage(named: "sharemore_video")!, .camera),
         ("红包", UIImage(named: "sharemore_wallet")!, .redpacket)
     ]
 
