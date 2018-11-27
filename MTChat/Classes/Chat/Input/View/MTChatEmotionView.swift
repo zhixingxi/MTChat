@@ -76,8 +76,8 @@ extension MTChatEmotionView {
             bt.backgroundColor = UIColor(red:0.13, green:0.41, blue:0.79, alpha:1.00)
             bt.setTitle("发送", for: .normal)
             bt.addTarget(self, action: #selector(sendBtnClick(_:)), for: .touchUpInside)
-            vBottom.addSubview(btSend)
-            btSend.snp.makeConstraints({ (m) in
+            vBottom.addSubview(bt)
+            bt.snp.makeConstraints({ (m) in
                 m.top.right.bottom.equalToSuperview()
                 m.width.equalTo(53)
             })
@@ -90,7 +90,7 @@ extension MTChatEmotionView {
         collectionView.backgroundColor = MTChatColors.keyboardBgColor
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(MTChatMoreCell.self, forCellWithReuseIdentifier: kEmotionCellID)
+        collectionView.register(MTChatEmotionCell.self, forCellWithReuseIdentifier: kEmotionCellID)
         addSubview(collectionView)
         collectionView.snp.makeConstraints { (m) in
             m.left.top.right.equalToSuperview()
@@ -104,6 +104,7 @@ extension MTChatEmotionView {
             pc.currentPage = 0
             pc.pageIndicatorTintColor = UIColor.lightGray
             pc.currentPageIndicatorTintColor = UIColor.gray
+            pc.backgroundColor = MTChatColors.keyboardBgColor
             addSubview(pc)
             pc.snp.makeConstraints({ (m) in
                 m.left.right.equalToSuperview()

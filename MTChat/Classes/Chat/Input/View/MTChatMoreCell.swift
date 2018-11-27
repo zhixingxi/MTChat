@@ -39,6 +39,19 @@ class MTChatMoreCell: UICollectionViewCell {
     }
     
     private func setupViews() {
+        
+        lbItem = UILabel().then({ (lb) in
+            lb.textColor = UIColor.gray
+            lb.font = UIFont.systemFont(ofSize: 11.0)
+            lb.textAlignment = .center
+            contentView.addSubview(lb)
+            lb.snp.makeConstraints({ (m) in
+                m.left.right.equalToSuperview()
+                m.bottom.equalToSuperview().offset(-2)
+                m.height.equalTo(21)
+            })
+        })
+        
         btItem = UIButton(type: .custom).then({ (bt) in
             bt.backgroundColor = UIColor.white
             bt.isUserInteractionEnabled = false
@@ -55,16 +68,6 @@ class MTChatMoreCell: UICollectionViewCell {
             })
         })
         
-        lbItem = UILabel().then({ (lb) in
-            lb.textColor = UIColor.gray
-            lb.font = UIFont.systemFont(ofSize: 11.0)
-            lb.textAlignment = .center
-            contentView.addSubview(lb)
-            lb.snp.makeConstraints({ (m) in
-                m.left.right.equalToSuperview()
-                m.bottom.equalToSuperview().offset(-2)
-                m.height.equalTo(21)
-            })
-        })
+        
     }
 }

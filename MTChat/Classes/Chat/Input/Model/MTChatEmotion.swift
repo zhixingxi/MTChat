@@ -11,15 +11,13 @@ import Foundation
 /// 表情对象
 struct MTChatEmotion {
     /// 表情对应的图片名称
-    var image: String? {
-        didSet {
-            imgPath = Bundle.main.bundlePath + "/Expression.bundle/" + image! + ".png"
-        }
-    }
+    var image: String?
     /// 表情对应的文字
     var text: String?
     
-    var imgPath: String?
+    var imgPath: String? {
+        return Bundle.main.bundlePath + "/Expression.bundle/" + image! + ".png"
+    }
     var beRemove: Bool  = false
     var beEmpty: Bool = false
     

@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func pushToChat(_ sender: UIButton) {
+        
+        let vc = MTChatController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 

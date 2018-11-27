@@ -59,6 +59,8 @@
 		B23474E121AD31ED00C2689B /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474E021AD31ED00C2689B /* UITextViewExtension.swift */; };
 		B23474E321AD357D00C2689B /* MTChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474E221AD357D00C2689B /* MTChatController.swift */; };
 		B23474E621AD3A2E00C2689B /* MTChatMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474E521AD3A2E00C2689B /* MTChatMessageController.swift */; };
+		B23474EB21AD3FFC00C2689B /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B23474E921AD3FFC00C2689B /* Expression.bundle */; };
+		B23474EC21AD3FFC00C2689B /* Expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = B23474EA21AD3FFC00C2689B /* Expression.plist */; };
 		DA59AF76E664A602A15DB872 /* Pods_MTChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9530A94A671CABA0310AB781 /* Pods_MTChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +136,8 @@
 		B23474E021AD31ED00C2689B /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		B23474E221AD357D00C2689B /* MTChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatController.swift; sourceTree = "<group>"; };
 		B23474E521AD3A2E00C2689B /* MTChatMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatMessageController.swift; sourceTree = "<group>"; };
+		B23474E921AD3FFC00C2689B /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
+		B23474EA21AD3FFC00C2689B /* Expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expression.plist; sourceTree = "<group>"; };
 		CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.release.xcconfig"; sourceTree = "<group>"; };
 		E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +206,7 @@
 		B234746821ABDEBB00C2689B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B23474E721AD3FEA00C2689B /* Resource */,
 				B234749721ABF4DE00C2689B /* Global */,
 				B234747A21ABE5F100C2689B /* Vendor */,
 				B234747521ABE3C700C2689B /* Constant */,
@@ -397,6 +402,23 @@
 			path = Message;
 			sourceTree = "<group>";
 		};
+		B23474E721AD3FEA00C2689B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B23474E821AD3FFC00C2689B /* Emotion */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B23474E821AD3FFC00C2689B /* Emotion */ = {
+			isa = PBXGroup;
+			children = (
+				B23474E921AD3FFC00C2689B /* Expression.bundle */,
+				B23474EA21AD3FFC00C2689B /* Expression.plist */,
+			);
+			path = Emotion;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -460,6 +482,8 @@
 				B234746121ABDA4400C2689B /* LaunchScreen.storyboard in Resources */,
 				B23474D721AD2D0F00C2689B /* TZImagePickerController.bundle in Resources */,
 				B234745E21ABDA4400C2689B /* Assets.xcassets in Resources */,
+				B23474EB21AD3FFC00C2689B /* Expression.bundle in Resources */,
+				B23474EC21AD3FFC00C2689B /* Expression.plist in Resources */,
 				B234745C21ABDA4300C2689B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
