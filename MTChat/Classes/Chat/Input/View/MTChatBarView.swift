@@ -160,7 +160,7 @@ extension MTChatBarView {
 // MARK:- 初始化UI
 extension MTChatBarView {
     private func setupUI() {
-        backgroundColor = MTInputBarConstant.keyboardBgColor
+        backgroundColor = MTChatColors.keyboardBgColor
         setupVoiceButton()
         setupMoreButton()
         setupEmotionButton()

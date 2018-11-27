@@ -32,6 +32,12 @@ class MTChatMoreCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        //FIXME: - 是否需要
+//        btItem.width = btItem.height
+    }
+    
     private func setupViews() {
         btItem = UIButton(type: .custom).then({ (bt) in
             bt.backgroundColor = UIColor.white

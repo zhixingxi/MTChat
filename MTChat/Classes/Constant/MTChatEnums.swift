@@ -21,7 +21,7 @@ public struct MTChatEnums {
     public enum MoreType {
         case pic        // 照片
         case camera     // 相机
-        case wallet     // 红包
+        case redpacket     // 红包
         case sight      // 小视频
         case video      // 视频聊天
         case pay        // 转账
