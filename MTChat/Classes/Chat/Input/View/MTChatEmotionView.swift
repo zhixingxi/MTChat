@@ -46,7 +46,7 @@ class MTChatEmotionView: UIView {
     }
     
     @objc private func sendBtnClick(_ sender: UIButton) {
-        
+        delegate?.send(emotionView: self)
     }
     
 }

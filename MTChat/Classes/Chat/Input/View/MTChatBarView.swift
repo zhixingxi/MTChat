@@ -83,7 +83,8 @@ extension MTChatBarView {
     }
     /// 语音按钮
     @objc private func btVoiceClick(_ sender: UIButton) {
-        MTLog("btVoiceClick")
+        MTLog("期待中。。。")
+        return
         resetButtonsUI()
         if keyboardType == .voice {
             keyboardType = .text
