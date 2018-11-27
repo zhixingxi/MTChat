@@ -22,6 +22,8 @@ public struct MTInputBarConstant {
     public static let barOriginHeight: CGFloat = 49.0
     public static let barTextViewMaxHeight: CGFloat = 100
     public static let barTextViewHeight: CGFloat = barOriginHeight - 14.0
+    public static let noTextKeyboardHeight: CGFloat = 216.0
+    public static let keyboardChangeFrameTime = 0.25
 }
 
 //MARK: -  颜色常量
@@ -31,4 +33,7 @@ public struct MTChatColors {
     public static let keyboardBgColor = UIColor (red: 0.96, green: 0.96, blue: 0.96, alpha: 1.0)
     /// 分割线颜色
     public static let splitLineColor = UIColor (red: 0.78, green: 0.78, blue: 0.80, alpha: 1.0)
+    // 常规背景颜色
+    public static let commonBgColor = UIColor(red: 0.92, green: 0.92, blue: 0.92, alpha: 1.0)
+    
 }

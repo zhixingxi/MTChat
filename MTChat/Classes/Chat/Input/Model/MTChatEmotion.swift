@@ -38,6 +38,10 @@ struct MTChatEmotion {
 }
 
 extension MTChatEmotion: MTEmotionType {
+    var getText: String? {
+        return text
+    }
+    
     func isRemove() -> Bool {
         return beRemove
     }

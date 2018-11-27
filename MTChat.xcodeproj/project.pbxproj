@@ -41,6 +41,24 @@
 		B23474AC21ACE9AF00C2689B /* MTEmotionHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474AB21ACE9AF00C2689B /* MTEmotionHelp.swift */; };
 		B23474AF21ACEA0000C2689B /* MTChatEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474AE21ACEA0000C2689B /* MTChatEmotion.swift */; };
 		B23474B121ACF19C00C2689B /* MTChatVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474B021ACF19C00C2689B /* MTChatVoiceView.swift */; };
+		B23474D021AD2D0F00C2689B /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474B521AD2D0F00C2689B /* TZImageCropManager.m */; };
+		B23474D121AD2D0F00C2689B /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474B721AD2D0F00C2689B /* TZAssetCell.m */; };
+		B23474D221AD2D0F00C2689B /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474B821AD2D0F00C2689B /* TZVideoPlayerController.m */; };
+		B23474D321AD2D0F00C2689B /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474B921AD2D0F00C2689B /* TZAssetModel.m */; };
+		B23474D421AD2D0F00C2689B /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474BA21AD2D0F00C2689B /* NSBundle+TZImagePicker.m */; };
+		B23474D521AD2D0F00C2689B /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474BD21AD2D0F00C2689B /* UIView+Layout.m */; };
+		B23474D621AD2D0F00C2689B /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474BE21AD2D0F00C2689B /* TZPhotoPreviewController.m */; };
+		B23474D721AD2D0F00C2689B /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B23474BF21AD2D0F00C2689B /* TZImagePickerController.bundle */; };
+		B23474D821AD2D0F00C2689B /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474C021AD2D0F00C2689B /* TZProgressView.m */; };
+		B23474D921AD2D0F00C2689B /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474C321AD2D0F00C2689B /* TZImageManager.m */; };
+		B23474DA21AD2D0F00C2689B /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474C521AD2D0F00C2689B /* TZPhotoPickerController.m */; };
+		B23474DB21AD2D0F00C2689B /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474C621AD2D0F00C2689B /* TZPhotoPreviewCell.m */; };
+		B23474DC21AD2D0F00C2689B /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474CC21AD2D0F00C2689B /* TZImagePickerController.m */; };
+		B23474DD21AD2D0F00C2689B /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474CD21AD2D0F00C2689B /* TZLocationManager.m */; };
+		B23474DE21AD2D0F00C2689B /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474CE21AD2D0F00C2689B /* TZGifPhotoPreviewController.m */; };
+		B23474E121AD31ED00C2689B /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474E021AD31ED00C2689B /* UITextViewExtension.swift */; };
+		B23474E321AD357D00C2689B /* MTChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474E221AD357D00C2689B /* MTChatController.swift */; };
+		B23474E621AD3A2E00C2689B /* MTChatMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474E521AD3A2E00C2689B /* MTChatMessageController.swift */; };
 		DA59AF76E664A602A15DB872 /* Pods_MTChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9530A94A671CABA0310AB781 /* Pods_MTChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +101,39 @@
 		B23474AB21ACE9AF00C2689B /* MTEmotionHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTEmotionHelp.swift; sourceTree = "<group>"; };
 		B23474AE21ACEA0000C2689B /* MTChatEmotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatEmotion.swift; sourceTree = "<group>"; };
 		B23474B021ACF19C00C2689B /* MTChatVoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatVoiceView.swift; sourceTree = "<group>"; };
+		B23474B321AD2D0F00C2689B /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		B23474B421AD2D0F00C2689B /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
+		B23474B521AD2D0F00C2689B /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
+		B23474B621AD2D0F00C2689B /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
+		B23474B721AD2D0F00C2689B /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
+		B23474B821AD2D0F00C2689B /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
+		B23474B921AD2D0F00C2689B /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
+		B23474BA21AD2D0F00C2689B /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
+		B23474BB21AD2D0F00C2689B /* TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLocationManager.h; sourceTree = "<group>"; };
+		B23474BC21AD2D0F00C2689B /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
+		B23474BD21AD2D0F00C2689B /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		B23474BE21AD2D0F00C2689B /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		B23474BF21AD2D0F00C2689B /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
+		B23474C021AD2D0F00C2689B /* TZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZProgressView.m; sourceTree = "<group>"; };
+		B23474C121AD2D0F00C2689B /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
+		B23474C221AD2D0F00C2689B /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
+		B23474C321AD2D0F00C2689B /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
+		B23474C421AD2D0F00C2689B /* TZImageCropManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageCropManager.h; sourceTree = "<group>"; };
+		B23474C521AD2D0F00C2689B /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
+		B23474C621AD2D0F00C2689B /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		B23474C721AD2D0F00C2689B /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
+		B23474C821AD2D0F00C2689B /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
+		B23474C921AD2D0F00C2689B /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
+		B23474CA21AD2D0F00C2689B /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		B23474CB21AD2D0F00C2689B /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		B23474CC21AD2D0F00C2689B /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
+		B23474CD21AD2D0F00C2689B /* TZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLocationManager.m; sourceTree = "<group>"; };
+		B23474CE21AD2D0F00C2689B /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
+		B23474CF21AD2D0F00C2689B /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
+		B23474DF21AD2D7E00C2689B /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		B23474E021AD31ED00C2689B /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		B23474E221AD357D00C2689B /* MTChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatController.swift; sourceTree = "<group>"; };
+		B23474E521AD3A2E00C2689B /* MTChatMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatMessageController.swift; sourceTree = "<group>"; };
 		CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.release.xcconfig"; sourceTree = "<group>"; };
 		E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,7 +215,9 @@
 		B234746921ABE06400C2689B /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				B23474E421AD3A1A00C2689B /* Message */,
 				B234746A21ABE07400C2689B /* Input */,
+				B23474E221AD357D00C2689B /* MTChatController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -216,6 +269,7 @@
 			children = (
 				B234749521ABE89300C2689B /* UIColorExtension.swift */,
 				B234749A21ABF9CB00C2689B /* UIViewExtension.swift */,
+				B23474E021AD31ED00C2689B /* UITextViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -233,6 +287,7 @@
 		B234747A21ABE5F100C2689B /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				B23474B221AD2D0E00C2689B /* TZImagePickerController */,
 				B234749421ABE62D00C2689B /* Then */,
 				B234747B21ABE61000C2689B /* Closures */,
 			);
@@ -277,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				B234749821ABF4F200C2689B /* MTLogUtil.swift */,
+				B23474DF21AD2D7E00C2689B /* Bridging_Header.h */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -295,6 +351,50 @@
 				B23474AE21ACEA0000C2689B /* MTChatEmotion.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B23474B221AD2D0E00C2689B /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				B23474B321AD2D0F00C2689B /* TZPhotoPreviewCell.h */,
+				B23474B421AD2D0F00C2689B /* TZPhotoPickerController.h */,
+				B23474B521AD2D0F00C2689B /* TZImageCropManager.m */,
+				B23474B621AD2D0F00C2689B /* TZImageManager.h */,
+				B23474B721AD2D0F00C2689B /* TZAssetCell.m */,
+				B23474B821AD2D0F00C2689B /* TZVideoPlayerController.m */,
+				B23474B921AD2D0F00C2689B /* TZAssetModel.m */,
+				B23474BA21AD2D0F00C2689B /* NSBundle+TZImagePicker.m */,
+				B23474BB21AD2D0F00C2689B /* TZLocationManager.h */,
+				B23474BC21AD2D0F00C2689B /* TZImagePickerController.h */,
+				B23474BD21AD2D0F00C2689B /* UIView+Layout.m */,
+				B23474BE21AD2D0F00C2689B /* TZPhotoPreviewController.m */,
+				B23474BF21AD2D0F00C2689B /* TZImagePickerController.bundle */,
+				B23474C021AD2D0F00C2689B /* TZProgressView.m */,
+				B23474C121AD2D0F00C2689B /* TZGifPhotoPreviewController.h */,
+				B23474C221AD2D0F00C2689B /* TZAssetCell.h */,
+				B23474C321AD2D0F00C2689B /* TZImageManager.m */,
+				B23474C421AD2D0F00C2689B /* TZImageCropManager.h */,
+				B23474C521AD2D0F00C2689B /* TZPhotoPickerController.m */,
+				B23474C621AD2D0F00C2689B /* TZPhotoPreviewCell.m */,
+				B23474C721AD2D0F00C2689B /* NSBundle+TZImagePicker.h */,
+				B23474C821AD2D0F00C2689B /* TZAssetModel.h */,
+				B23474C921AD2D0F00C2689B /* TZVideoPlayerController.h */,
+				B23474CA21AD2D0F00C2689B /* TZPhotoPreviewController.h */,
+				B23474CB21AD2D0F00C2689B /* UIView+Layout.h */,
+				B23474CC21AD2D0F00C2689B /* TZImagePickerController.m */,
+				B23474CD21AD2D0F00C2689B /* TZLocationManager.m */,
+				B23474CE21AD2D0F00C2689B /* TZGifPhotoPreviewController.m */,
+				B23474CF21AD2D0F00C2689B /* TZProgressView.h */,
+			);
+			path = TZImagePickerController;
+			sourceTree = "<group>";
+		};
+		B23474E421AD3A1A00C2689B /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				B23474E521AD3A2E00C2689B /* MTChatMessageController.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B234746121ABDA4400C2689B /* LaunchScreen.storyboard in Resources */,
+				B23474D721AD2D0F00C2689B /* TZImagePickerController.bundle in Resources */,
 				B234745E21ABDA4400C2689B /* Assets.xcassets in Resources */,
 				B234745C21ABDA4300C2689B /* Main.storyboard in Resources */,
 			);
@@ -425,28 +526,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23474D421AD2D0F00C2689B /* NSBundle+TZImagePicker.m in Sources */,
 				B23474A121AC10CD00C2689B /* MTChatHorizontalLayout.swift in Sources */,
+				B23474E621AD3A2E00C2689B /* MTChatMessageController.swift in Sources */,
 				B23474AC21ACE9AF00C2689B /* MTEmotionHelp.swift in Sources */,
+				B23474D121AD2D0F00C2689B /* TZAssetCell.m in Sources */,
 				B234745921ABDA4300C2689B /* ViewController.swift in Sources */,
+				B23474E121AD31ED00C2689B /* UITextViewExtension.swift in Sources */,
 				B234747121ABE1BA00C2689B /* MTUserType.swift in Sources */,
 				B234749121ABE61000C2689B /* KVO.swift in Sources */,
 				B234749921ABF4F200C2689B /* MTLogUtil.swift in Sources */,
+				B23474DD21AD2D0F00C2689B /* TZLocationManager.m in Sources */,
+				B23474E321AD357D00C2689B /* MTChatController.swift in Sources */,
+				B23474D821AD2D0F00C2689B /* TZProgressView.m in Sources */,
 				B234745721ABDA4300C2689B /* AppDelegate.swift in Sources */,
 				B234749621ABE89300C2689B /* UIColorExtension.swift in Sources */,
 				B234748F21ABE61000C2689B /* Core.swift in Sources */,
 				B234749D21ABFDF900C2689B /* MTChatNoticeName.swift in Sources */,
+				B23474D521AD2D0F00C2689B /* UIView+Layout.m in Sources */,
+				B23474D621AD2D0F00C2689B /* TZPhotoPreviewController.m in Sources */,
 				B234748A21ABE61000C2689B /* UIGestureRecognizer.swift in Sources */,
+				B23474DE21AD2D0F00C2689B /* TZGifPhotoPreviewController.m in Sources */,
 				B234746E21ABE11100C2689B /* MTChatBarController.swift in Sources */,
 				B234747921ABE4E000C2689B /* MTChatEnums.swift in Sources */,
+				B23474DA21AD2D0F00C2689B /* TZPhotoPickerController.m in Sources */,
 				B234748E21ABE61000C2689B /* UIPickerView.swift in Sources */,
 				B234748C21ABE61000C2689B /* UICollectionView.swift in Sources */,
+				B23474DB21AD2D0F00C2689B /* TZPhotoPreviewCell.m in Sources */,
+				B23474D021AD2D0F00C2689B /* TZImageCropManager.m in Sources */,
+				B23474D321AD2D0F00C2689B /* TZAssetModel.m in Sources */,
 				B234749321ABE62900C2689B /* Then.swift in Sources */,
+				B23474D921AD2D0F00C2689B /* TZImageManager.m in Sources */,
+				B23474D221AD2D0F00C2689B /* TZVideoPlayerController.m in Sources */,
 				B234749021ABE61000C2689B /* UIControl.swift in Sources */,
 				B23474B121ACF19C00C2689B /* MTChatVoiceView.swift in Sources */,
 				B23474A721ACDF3D00C2689B /* MTChatEmotionCell.swift in Sources */,
 				B234748921ABE61000C2689B /* UIImagePickerController.swift in Sources */,
 				B23474A321ACD24400C2689B /* MTChatMoreView.swift in Sources */,
 				B234748B21ABE61000C2689B /* UIBarButtonItem.swift in Sources */,
+				B23474DC21AD2D0F00C2689B /* TZImagePickerController.m in Sources */,
 				B234748821ABE61000C2689B /* UIScrollView.swift in Sources */,
 				B23474A921ACE08A00C2689B /* MTChatEmotionView.swift in Sources */,
 				B234748D21ABE61000C2689B /* UITableView.swift in Sources */,
@@ -611,6 +729,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MQL.MTChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MTChat/Classes/Global/Bridging_Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -630,6 +749,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MQL.MTChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MTChat/Classes/Global/Bridging_Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

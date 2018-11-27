@@ -10,5 +10,5 @@ import Foundation
 
 ///  用户模型声明
 protocol MTUserType {
-    
+    func getTitle() -> String?
 }

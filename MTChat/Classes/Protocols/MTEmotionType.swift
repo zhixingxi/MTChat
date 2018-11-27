@@ -14,4 +14,5 @@ protocol MTEmotionType {
     func isRemove() -> Bool
     func isEmpty() -> Bool
     func imagePath() -> String?
+    var getText: String? { get }
 }

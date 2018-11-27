@@ -33,7 +33,7 @@ class MTChatBarView: UIView {
     /// 更多按钮
     private var btMore: UIButton!
     /// 输入 UITextView
-    private var tvInput: UITextView!
+    var tvInput: UITextView!
     /// 语音按钮
     private var btRecord: UIButton!
     
@@ -284,7 +284,7 @@ extension MTChatBarView {
 
 // MARK: - 改变 UI
 extension MTChatBarView {
-    private func resetButtonsUI() {
+    func resetButtonsUI() {
         btVoice.setImage(UIImage(named: "ToolViewInputVoice"), for: .normal)
         btVoice.setImage(UIImage(named: "ToolViewInputVoiceHL"), for: .highlighted)
         
