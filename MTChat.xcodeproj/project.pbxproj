@@ -18,9 +18,9 @@
 		B234747721ABE3EC00C2689B /* MTChatConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747621ABE3EC00C2689B /* MTChatConstant.swift */; };
 		B234747921ABE4E000C2689B /* MTChatEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747821ABE4E000C2689B /* MTChatEnums.swift */; };
 		B234749321ABE62900C2689B /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749221ABE62900C2689B /* Then.swift */; };
-		B234749621ABE89300C2689B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749521ABE89300C2689B /* UIColorExtension.swift */; };
+		B234749621ABE89300C2689B /* UIColorMTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749521ABE89300C2689B /* UIColorMTExtension.swift */; };
 		B234749921ABF4F200C2689B /* MTLogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749821ABF4F200C2689B /* MTLogUtil.swift */; };
-		B234749B21ABF9CB00C2689B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749A21ABF9CB00C2689B /* UIViewExtension.swift */; };
+		B234749B21ABF9CB00C2689B /* UIViewMTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749A21ABF9CB00C2689B /* UIViewMTExtension.swift */; };
 		B234749D21ABFDF900C2689B /* MTChatNoticeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749C21ABFDF900C2689B /* MTChatNoticeName.swift */; };
 		B234749F21AC0C0800C2689B /* MTChatMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749E21AC0C0800C2689B /* MTChatMoreCell.swift */; };
 		B23474A121AC10CD00C2689B /* MTChatHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474A021AC10CD00C2689B /* MTChatHorizontalLayout.swift */; };
@@ -46,7 +46,7 @@
 		B23474DC21AD2D0F00C2689B /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474CC21AD2D0F00C2689B /* TZImagePickerController.m */; };
 		B23474DD21AD2D0F00C2689B /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474CD21AD2D0F00C2689B /* TZLocationManager.m */; };
 		B23474DE21AD2D0F00C2689B /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23474CE21AD2D0F00C2689B /* TZGifPhotoPreviewController.m */; };
-		B23474E121AD31ED00C2689B /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474E021AD31ED00C2689B /* UITextViewExtension.swift */; };
+		B23474E121AD31ED00C2689B /* UITextViewMTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474E021AD31ED00C2689B /* UITextViewMTExtension.swift */; };
 		B23474E321AD357D00C2689B /* MTChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474E221AD357D00C2689B /* MTChatController.swift */; };
 		B23474E621AD3A2E00C2689B /* MTChatMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474E521AD3A2E00C2689B /* MTChatMessageController.swift */; };
 		B23474EB21AD3FFC00C2689B /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B23474E921AD3FFC00C2689B /* Expression.bundle */; };
@@ -58,7 +58,7 @@
 		B234751921AE4F3B00C2689B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234751821AE4F3B00C2689B /* UIImageViewExtension.swift */; };
 		B234751B21AE56B500C2689B /* MTTextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234751A21AE56B500C2689B /* MTTextMessageCell.swift */; };
 		B234751D21AE586800C2689B /* MTMessageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234751C21AE586800C2689B /* MTMessageConstant.swift */; };
-		B234751F21AE5F1A00C2689B /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234751E21AE5F1A00C2689B /* UIImageExtension.swift */; };
+		B234751F21AE5F1A00C2689B /* UIImageMTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234751E21AE5F1A00C2689B /* UIImageMTExtension.swift */; };
 		DA59AF76E664A602A15DB872 /* Pods_MTChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9530A94A671CABA0310AB781 /* Pods_MTChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,9 +77,9 @@
 		B234747621ABE3EC00C2689B /* MTChatConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatConstant.swift; sourceTree = "<group>"; };
 		B234747821ABE4E000C2689B /* MTChatEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatEnums.swift; sourceTree = "<group>"; };
 		B234749221ABE62900C2689B /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
-		B234749521ABE89300C2689B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		B234749521ABE89300C2689B /* UIColorMTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorMTExtension.swift; sourceTree = "<group>"; };
 		B234749821ABF4F200C2689B /* MTLogUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTLogUtil.swift; sourceTree = "<group>"; };
-		B234749A21ABF9CB00C2689B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		B234749A21ABF9CB00C2689B /* UIViewMTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewMTExtension.swift; sourceTree = "<group>"; };
 		B234749C21ABFDF900C2689B /* MTChatNoticeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatNoticeName.swift; sourceTree = "<group>"; };
 		B234749E21AC0C0800C2689B /* MTChatMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatMoreCell.swift; sourceTree = "<group>"; };
 		B23474A021AC10CD00C2689B /* MTChatHorizontalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatHorizontalLayout.swift; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		B23474CE21AD2D0F00C2689B /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
 		B23474CF21AD2D0F00C2689B /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
 		B23474DF21AD2D7E00C2689B /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
-		B23474E021AD31ED00C2689B /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		B23474E021AD31ED00C2689B /* UITextViewMTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewMTExtension.swift; sourceTree = "<group>"; };
 		B23474E221AD357D00C2689B /* MTChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatController.swift; sourceTree = "<group>"; };
 		B23474E521AD3A2E00C2689B /* MTChatMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatMessageController.swift; sourceTree = "<group>"; };
 		B23474E921AD3FFC00C2689B /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		B234751821AE4F3B00C2689B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		B234751A21AE56B500C2689B /* MTTextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTTextMessageCell.swift; sourceTree = "<group>"; };
 		B234751C21AE586800C2689B /* MTMessageConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMessageConstant.swift; sourceTree = "<group>"; };
-		B234751E21AE5F1A00C2689B /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		B234751E21AE5F1A00C2689B /* UIImageMTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageMTExtension.swift; sourceTree = "<group>"; };
 		CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.release.xcconfig"; sourceTree = "<group>"; };
 		E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,10 +268,10 @@
 		B234747421ABE29D00C2689B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B234749521ABE89300C2689B /* UIColorExtension.swift */,
-				B234749A21ABF9CB00C2689B /* UIViewExtension.swift */,
-				B23474E021AD31ED00C2689B /* UITextViewExtension.swift */,
-				B234751E21AE5F1A00C2689B /* UIImageExtension.swift */,
+				B234749521ABE89300C2689B /* UIColorMTExtension.swift */,
+				B234749A21ABF9CB00C2689B /* UIViewMTExtension.swift */,
+				B23474E021AD31ED00C2689B /* UITextViewMTExtension.swift */,
+				B234751E21AE5F1A00C2689B /* UIImageMTExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -566,7 +566,7 @@
 				B23474AC21ACE9AF00C2689B /* MTEmotionHelp.swift in Sources */,
 				B23474D121AD2D0F00C2689B /* TZAssetCell.m in Sources */,
 				B234745921ABDA4300C2689B /* ViewController.swift in Sources */,
-				B23474E121AD31ED00C2689B /* UITextViewExtension.swift in Sources */,
+				B23474E121AD31ED00C2689B /* UITextViewMTExtension.swift in Sources */,
 				B234747121ABE1BA00C2689B /* MTUserType.swift in Sources */,
 				B23474F721AE3BA600C2689B /* MTMessageBaseCell.swift in Sources */,
 				B234749921ABF4F200C2689B /* MTLogUtil.swift in Sources */,
@@ -577,13 +577,13 @@
 				B234745721ABDA4300C2689B /* AppDelegate.swift in Sources */,
 				B23474EF21AD474400C2689B /* MTChatTools.swift in Sources */,
 				B234751B21AE56B500C2689B /* MTTextMessageCell.swift in Sources */,
-				B234749621ABE89300C2689B /* UIColorExtension.swift in Sources */,
+				B234749621ABE89300C2689B /* UIColorMTExtension.swift in Sources */,
 				B234749D21ABFDF900C2689B /* MTChatNoticeName.swift in Sources */,
 				B23474D521AD2D0F00C2689B /* UIView+Layout.m in Sources */,
 				B23474D621AD2D0F00C2689B /* TZPhotoPreviewController.m in Sources */,
 				B23474DE21AD2D0F00C2689B /* TZGifPhotoPreviewController.m in Sources */,
 				B234746E21ABE11100C2689B /* MTChatBarController.swift in Sources */,
-				B234751F21AE5F1A00C2689B /* UIImageExtension.swift in Sources */,
+				B234751F21AE5F1A00C2689B /* UIImageMTExtension.swift in Sources */,
 				B234747921ABE4E000C2689B /* MTChatEnums.swift in Sources */,
 				B23474DA21AD2D0F00C2689B /* TZPhotoPickerController.m in Sources */,
 				B23474DB21AD2D0F00C2689B /* TZPhotoPreviewCell.m in Sources */,
@@ -598,7 +598,7 @@
 				B23474A321ACD24400C2689B /* MTChatMoreView.swift in Sources */,
 				B23474DC21AD2D0F00C2689B /* TZImagePickerController.m in Sources */,
 				B23474A921ACE08A00C2689B /* MTChatEmotionView.swift in Sources */,
-				B234749B21ABF9CB00C2689B /* UIViewExtension.swift in Sources */,
+				B234749B21ABF9CB00C2689B /* UIViewMTExtension.swift in Sources */,
 				B23474A521ACDD3100C2689B /* MTEmotionType.swift in Sources */,
 				B23474AF21ACEA0000C2689B /* MTChatEmotion.swift in Sources */,
 				B234747721ABE3EC00C2689B /* MTChatConstant.swift in Sources */,
