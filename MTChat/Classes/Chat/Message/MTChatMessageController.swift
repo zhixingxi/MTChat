@@ -10,13 +10,19 @@ import UIKit
 
 private let textCellId = "MTTextMessageCell"
 
+protocol MTChatMessageControllerDelegate: NSObjectProtocol {
+    func chatMsgVCWillBeginDragging(chatMsgVC: MTChatMessageController)
+}
+
 class MTChatMessageController: UIViewController {
+    
+    weak var delegate: MTChatMessageControllerDelegate?
     
     private var dataArray: [MTMessageProtocol] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.red
+        view.backgroundColor = MTChatColors.commonBgColor
         setupTableView()
     }
     
@@ -31,6 +37,7 @@ extension MTChatMessageController {
             tb.separatorStyle = .none
             tb.dataSource = self
             tb.delegate = self
+            tb.backgroundColor = MTChatColors.commonBgColor
             tb.tableFooterView = UIView()
             tb.register(MTTextMessageCell.self, forCellReuseIdentifier: textCellId)
             view.addSubview(tb)
@@ -38,7 +45,6 @@ extension MTChatMessageController {
                 m.edges.equalToSuperview()
             })
         })
-        
     }
 }
 
@@ -69,5 +75,18 @@ extension MTChatMessageController: UITableViewDelegate, UITableViewDataSource {
         return 64
     }
     
-    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        delegate?.chatMsgVCWillBeginDragging(chatMsgVC: self)
+    }
+}
+
+// MARK:- 对外提供的方法
+extension MTChatMessageController {
+    // MARK: 滚到底部
+    func scrollToBottom(animated: Bool = false) {
+        self.view.layoutIfNeeded()
+//        if dataArray.count > 0 {
+            tableView.scrollToRow(at: IndexPath(row: 10 - 1, section: 0), at: .top, animated: animated)
+//        }
+    }
 }

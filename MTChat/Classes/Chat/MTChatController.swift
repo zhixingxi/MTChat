@@ -31,6 +31,7 @@ class MTChatController: UIViewController {
     /// 消息展示控制器
     lazy var chatMsgVC: MTChatMessageController = { [unowned self] in
         let msgVC = MTChatMessageController()
+        msgVC.delegate = self
         self.view.addSubview(msgVC.view)
         msgVC.view.snp.makeConstraints { (make) in
             make.left.right.top.equalTo(self.view)
@@ -214,9 +215,17 @@ extension MTChatController: MTChatBarControllerDelegate {
         })
         
         if distance != 0 {
-            //FIXME: - 修复
-//            chatMsgVC.scrollToBottom()
+            chatMsgVC.scrollToBottom()
         }
+    }
+    
+    
+}
+
+
+extension MTChatController: MTChatMessageControllerDelegate {
+    func chatMsgVCWillBeginDragging(chatMsgVC: MTChatMessageController) {
+        resetChatBarFrame()
     }
     
     
