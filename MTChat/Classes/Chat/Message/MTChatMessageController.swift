@@ -85,8 +85,60 @@ extension MTChatMessageController {
     // MARK: 滚到底部
     func scrollToBottom(animated: Bool = false) {
         self.view.layoutIfNeeded()
-//        if dataArray.count > 0 {
+        if dataArray.count > 0 {
             tableView.scrollToRow(at: IndexPath(row: 10 - 1, section: 0), at: .top, animated: animated)
-//        }
+        }
+    }
+    // MARK: 插入模型数据
+    func insertRowModel(model: MTMessageProtocol, isBottom: Bool = true) {
+        var indexPath: IndexPath!
+        if isBottom {
+            dataArray.append(model)
+            indexPath = IndexPath(row: dataArray.count - 1, section: 0)
+            _ = self.tableView(tableView, cellForRowAt: indexPath)
+            self.insertRows([indexPath])
+        } else {
+            dataArray.insert(model, at: 0)
+            indexPath = IndexPath(row: 0, section: 0)
+            _ = self.tableView(tableView, cellForRowAt: indexPath)
+            self.insertRows([indexPath], atBottom: false)
+        }
     }
 }
+
+// MARK:- private Method
+extension MTChatMessageController {
+    // MARK: 插入数据
+    private func insertRows(_ rows: [IndexPath], atBottom: Bool = true) {
+        UIView.setAnimationsEnabled(false)
+        self.tableView.beginUpdates()
+        self.tableView.insertRows(at: rows, with: .none)
+        self.tableView.endUpdates()
+        if atBottom {
+            self.scrollToBottom()
+        }
+        UIView.setAnimationsEnabled(true)
+        MTLog("插入数据")
+    }
+    
+    // MARK: 更新数据
+    private func updataRow(_ rows: [IndexPath]) {
+        UIView.setAnimationsEnabled(false)
+        self.tableView.beginUpdates()
+        self.tableView.reloadRows(at: rows, with: .none)
+        self.tableView.endUpdates()
+        UIView.setAnimationsEnabled(true)
+        MTLog("更新数据")
+    }
+    
+    // MARK: 删除数据
+    private func deleteRow(_ rows: [IndexPath]) {
+        UIView.setAnimationsEnabled(false)
+        self.tableView.beginUpdates()
+        self.tableView.deleteRows(at: rows, with: .none)
+        self.tableView.endUpdates()
+        UIView.setAnimationsEnabled(true)
+        MTLog("删除数据")
+    }
+}
+
