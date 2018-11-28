@@ -41,10 +41,10 @@ public struct MTChatEnums {
         case time //时间
     }
     
-    public enum MessageStatus {
-        case msgInit // 初始化
-        case sending //发送中
-        case sendSuccess // 发送成功
-        case sendFailed // 发送失败
+    @objc public enum MessageStatus: Int {
+        case msgInit = 0 // 初始化
+        case sending = 1 //发送中
+        case sendSuccess = 2 // 发送成功
+        case sendFailed = 3 // 发送失败
     }
 }

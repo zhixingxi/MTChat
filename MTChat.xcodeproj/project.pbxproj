@@ -53,6 +53,9 @@
 		B23474EC21AD3FFC00C2689B /* Expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = B23474EA21AD3FFC00C2689B /* Expression.plist */; };
 		B23474EF21AD474400C2689B /* MTChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474EE21AD474400C2689B /* MTChatTools.swift */; };
 		B23474F321AE2CB000C2689B /* MTMessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474F221AE2CB000C2689B /* MTMessageProtocol.swift */; };
+		B23474F521AE3B5900C2689B /* MTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474F421AE3B5900C2689B /* MTMessage.swift */; };
+		B23474F721AE3BA600C2689B /* MTMessageBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474F621AE3BA600C2689B /* MTMessageBaseCell.swift */; };
+		B234751921AE4F3B00C2689B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234751821AE4F3B00C2689B /* UIImageViewExtension.swift */; };
 		DA59AF76E664A602A15DB872 /* Pods_MTChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9530A94A671CABA0310AB781 /* Pods_MTChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +124,9 @@
 		B23474EA21AD3FFC00C2689B /* Expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expression.plist; sourceTree = "<group>"; };
 		B23474EE21AD474400C2689B /* MTChatTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatTools.swift; sourceTree = "<group>"; };
 		B23474F221AE2CB000C2689B /* MTMessageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMessageProtocol.swift; sourceTree = "<group>"; };
+		B23474F421AE3B5900C2689B /* MTMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMessage.swift; sourceTree = "<group>"; };
+		B23474F621AE3BA600C2689B /* MTMessageBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMessageBaseCell.swift; sourceTree = "<group>"; };
+		B234751821AE4F3B00C2689B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.release.xcconfig"; sourceTree = "<group>"; };
 		E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +195,7 @@
 		B234746821ABDEBB00C2689B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B234751721AE4F1B00C2689B /* DDDDDD */,
 				B23474E721AD3FEA00C2689B /* Resource */,
 				B234749721ABF4DE00C2689B /* Global */,
 				B234747A21ABE5F100C2689B /* Vendor */,
@@ -390,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				B23474F221AE2CB000C2689B /* MTMessageProtocol.swift */,
+				B23474F421AE3B5900C2689B /* MTMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -397,8 +405,17 @@
 		B23474F121AE2C7800C2689B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B23474F621AE3BA600C2689B /* MTMessageBaseCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B234751721AE4F1B00C2689B /* DDDDDD */ = {
+			isa = PBXGroup;
+			children = (
+				B234751821AE4F3B00C2689B /* UIImageViewExtension.swift */,
+			);
+			path = DDDDDD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,6 +551,7 @@
 			files = (
 				B23474D421AD2D0F00C2689B /* NSBundle+TZImagePicker.m in Sources */,
 				B23474A121AC10CD00C2689B /* MTChatHorizontalLayout.swift in Sources */,
+				B234751921AE4F3B00C2689B /* UIImageViewExtension.swift in Sources */,
 				B23474F321AE2CB000C2689B /* MTMessageProtocol.swift in Sources */,
 				B23474E621AD3A2E00C2689B /* MTChatMessageController.swift in Sources */,
 				B23474AC21ACE9AF00C2689B /* MTEmotionHelp.swift in Sources */,
@@ -541,6 +559,7 @@
 				B234745921ABDA4300C2689B /* ViewController.swift in Sources */,
 				B23474E121AD31ED00C2689B /* UITextViewExtension.swift in Sources */,
 				B234747121ABE1BA00C2689B /* MTUserType.swift in Sources */,
+				B23474F721AE3BA600C2689B /* MTMessageBaseCell.swift in Sources */,
 				B234749921ABF4F200C2689B /* MTLogUtil.swift in Sources */,
 				B23474DD21AD2D0F00C2689B /* TZLocationManager.m in Sources */,
 				B23474E321AD357D00C2689B /* MTChatController.swift in Sources */,
@@ -557,6 +576,7 @@
 				B23474DA21AD2D0F00C2689B /* TZPhotoPickerController.m in Sources */,
 				B23474DB21AD2D0F00C2689B /* TZPhotoPreviewCell.m in Sources */,
 				B23474D021AD2D0F00C2689B /* TZImageCropManager.m in Sources */,
+				B23474F521AE3B5900C2689B /* MTMessage.swift in Sources */,
 				B23474D321AD2D0F00C2689B /* TZAssetModel.m in Sources */,
 				B234749321ABE62900C2689B /* Then.swift in Sources */,
 				B23474D921AD2D0F00C2689B /* TZImageManager.m in Sources */,

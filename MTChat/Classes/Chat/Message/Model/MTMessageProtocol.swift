@@ -8,6 +8,8 @@
 
 import UIKit
 
-protocol MTMessageProtocol {
-    
+protocol MTMessageProtocol: NSObjectProtocol {
+    func isMine() -> Bool
+    func getMsgStatus() -> MTChatEnums.MessageStatus
+    func getUser() -> MTUserType?
 }
