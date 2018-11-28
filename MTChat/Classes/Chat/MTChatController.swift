@@ -31,6 +31,11 @@ class MTChatController: UIViewController {
     /// 消息展示控制器
     lazy var chatMsgVC: MTChatMessageController = { [unowned self] in
         let msgVC = MTChatMessageController()
+        self.view.addSubview(msgVC.view)
+        msgVC.view.snp.makeConstraints { (make) in
+            make.left.right.top.equalTo(self.view)
+            make.bottom.equalTo(self.chatBarVC.view.snp.top)
+        }
         return msgVC
     }()
     

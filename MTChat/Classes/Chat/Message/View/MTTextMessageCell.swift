@@ -31,8 +31,8 @@ class MTTextMessageCell: MTMessageBaseCell {
             ivBubble.snp.makeConstraints { (m) in
                 m.top.equalTo(ivAvatar)
                 m.right.equalTo(ivAvatar.snp.left).offset(-headToBubble)
-                m.left.equalTo(lbMessage.snp.left).offset(-bubblePadding)
-                m.bottom.equalToSuperview().offset(margin)
+                m.left.equalTo(lbMessage.snp.left).offset(-bubblePadding * 2)
+                m.bottom.equalToSuperview().offset(-margin)
             }
             
             lbMessage.snp.makeConstraints { (m) in
@@ -45,8 +45,8 @@ class MTTextMessageCell: MTMessageBaseCell {
             ivBubble.snp.makeConstraints { (m) in
                 m.top.equalTo(ivAvatar)
                 m.left.equalTo(ivAvatar.snp.right).offset(headToBubble)
-                m.right.equalTo(lbMessage.snp.right).offset(bubblePadding)
-                m.bottom.equalToSuperview().offset(margin)
+                m.right.equalTo(lbMessage.snp.right).offset(bubblePadding * 2)
+                m.bottom.equalToSuperview().offset(-margin)
             }
             
             lbMessage.snp.makeConstraints { (m) in
@@ -63,6 +63,7 @@ class MTTextMessageCell: MTMessageBaseCell {
     override func configModel() {
         super.configModel()
         lbMessage.attributedText = messageModel?.getTextConten()
+        setupLayout()
     }
 }
 

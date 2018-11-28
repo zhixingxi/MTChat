@@ -36,6 +36,7 @@ class MTMessageBaseCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
+        self.backgroundColor = MTChatColors.commonBgColor
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -100,6 +101,7 @@ class MTMessageBaseCell: UITableViewCell {
             btRetry.isHidden = false
             self.setupKVO()
         }
+        setupLayout()
     }
     
 }

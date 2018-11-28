@@ -9,12 +9,16 @@
 import UIKit
 
 @objc class MTMessage: NSObject {
-    var msgStatus: MTChatEnums.MessageStatus = .msgInit
+    @objc dynamic var msgStatus: MTChatEnums.MessageStatus = .msgInit
 }
 
 extension MTMessage: MTMessageProtocol {
+    func getMsgType() -> MTChatEnums.MessageType {
+        return .text
+    }
+    
     func getTextConten() -> NSMutableAttributedString? {
-        return nil
+        return NSMutableAttributedString(string: "共")
     }
     
     func getMsgStatus() -> MTChatEnums.MessageStatus {
@@ -27,6 +31,6 @@ extension MTMessage: MTMessageProtocol {
     
     /// 是否是自己发的消息
     func isMine() -> Bool {
-        return true
+        return false
     }
 }

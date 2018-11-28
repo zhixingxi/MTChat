@@ -16,9 +16,10 @@ extension UIImage {
         let stretchHeight: CGFloat = img.size.height / 5.0
         var resizeImage: UIImage?
         if isSender {
-            resizeImage = img.resizableImage(withCapInsets: UIEdgeInsets(top: stretchHeight, left: stretchWidth, bottom: img.size.height - stretchHeight, right: stretchWidth), resizingMode: .stretch)
+            resizeImage = img.resizableImage(withCapInsets: UIEdgeInsets(top: img.size.height - stretchHeight, left: stretchWidth, bottom: stretchHeight, right: stretchWidth), resizingMode: .stretch)
         } else {
             resizeImage = img.resizableImage(withCapInsets: UIEdgeInsets(top: img.size.height - stretchHeight, left: stretchWidth, bottom: stretchHeight, right: stretchWidth), resizingMode: .stretch)
+            
         }
         return resizeImage
     }
