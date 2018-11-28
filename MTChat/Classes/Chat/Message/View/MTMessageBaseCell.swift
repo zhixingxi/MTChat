@@ -18,25 +18,11 @@ protocol MTMessageBaseCellDelegate: NSObjectProtocol {
 class MTMessageBaseCell: UITableViewCell {
 
     var messageModel: MTMessageProtocol? {
-        didSet {
-            guard let model = messageModel else { return }
-            ivAvatar.ykSetImage(with: model.getUser()?.getAvatar())
-            switch model.getMsgStatus() {
-            case .msgInit, .sending:
-                btRetry.isHidden = true
-                vActivity.isHidden = false
-                vActivity.startAnimating()
-                self.setupKVO()
-            case .sendSuccess:
-                btRetry.isHidden = true
-                vActivity.isHidden = true
-                vActivity.stopAnimating()
-            case .sendFailed:
-                btRetry.isHidden = false
-                self.setupKVO()
-            }
-            
-        }
+        didSet { configModel() }
+    }
+    
+    var isSender: Bool {
+        return messageModel?.isMine() ?? false
     }
     
     var ivAvatar: UIImageView!
@@ -56,7 +42,65 @@ class MTMessageBaseCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-//MARK: - PROPERTY
+//MARK: - 布局
+    func setupLayout() {
+        let margin: CGFloat = 10.0
+        if isSender {
+            ivAvatar.snp.makeConstraints { (m) in
+                m.width.height.equalTo(avatarHeight)
+                m.top.equalToSuperview().offset(margin)
+                m.right.equalToSuperview().offset(-margin)
+            }
+            
+            vActivity.snp.makeConstraints { (m) in
+                m.centerY.equalTo(ivBubble)
+                m.right.equalTo(ivBubble.snp.left)
+                m.width.height.equalTo(40)
+            }
+            
+            btRetry.snp.makeConstraints { (m) in
+                m.edges.equalTo(vActivity)
+            }
+        } else {
+            ivAvatar.snp.makeConstraints { (m) in
+                m.width.height.equalTo(avatarHeight)
+                m.top.equalToSuperview().offset(margin)
+                m.left.equalToSuperview().offset(margin)
+            }
+            vActivity.snp.makeConstraints { (m) in
+                m.centerY.equalTo(ivBubble)
+                m.left.equalTo(ivBubble.snp.right)
+                m.width.height.equalTo(40)
+            }
+            
+            btRetry.snp.makeConstraints { (m) in
+                m.edges.equalTo(vActivity)
+            }
+        }
+    }
+    
+//MARK: -  配置数据
+    func configModel() {
+        guard let model = messageModel else { return }
+        ivAvatar.ykSetImage(with: model.getUser()?.getAvatar())
+        let imgName = isSender ? "message_sender_background_normal" : "message_receiver_background_normal"
+        ivBubble.image = UIImage.creatImage(imageName: imgName, isSender: isSender)
+        // 消息状态
+        switch model.getMsgStatus() {
+        case .msgInit, .sending:
+            btRetry.isHidden = true
+            vActivity.isHidden = false
+            vActivity.startAnimating()
+            self.setupKVO()
+        case .sendSuccess:
+            btRetry.isHidden = true
+            vActivity.isHidden = true
+            vActivity.stopAnimating()
+        case .sendFailed:
+            btRetry.isHidden = false
+            self.setupKVO()
+        }
+    }
     
 }
 
@@ -105,45 +149,6 @@ extension MTMessageBaseCell {
             bt.setImage(UIImage(named: "resend"), for: .normal)
             contentView.addSubview(bt)
         })
-        
-        setupLayout()
-    }
-    
-    func setupLayout() {
-        let margin: CGFloat = 10.0
-        let isSender = messageModel?.isMine() ?? false
-        if isSender {
-            ivAvatar.snp.makeConstraints { (m) in
-                m.width.height.equalTo(avatarHeight)
-                m.top.equalToSuperview().offset(margin)
-                m.right.equalToSuperview().offset(-margin)
-            }
-            
-            vActivity.snp.makeConstraints { (m) in
-                m.centerY.equalTo(ivBubble)
-                m.right.equalTo(ivBubble.snp.left)
-                m.width.height.equalTo(40)
-            }
-            
-            btRetry.snp.makeConstraints { (m) in
-                m.edges.equalTo(vActivity)
-            }
-        } else {
-            ivAvatar.snp.makeConstraints { (m) in
-                m.width.height.equalTo(avatarHeight)
-                m.top.equalToSuperview().offset(margin)
-                m.left.equalToSuperview().offset(margin)
-            }
-            vActivity.snp.makeConstraints { (m) in
-                m.centerY.equalTo(ivBubble)
-                m.left.equalTo(ivBubble.snp.right)
-                m.width.height.equalTo(40)
-            }
-            
-            btRetry.snp.makeConstraints { (m) in
-                m.edges.equalTo(vActivity)
-            }
-        }
     }
 }
 

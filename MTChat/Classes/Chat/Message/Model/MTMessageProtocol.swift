@@ -12,4 +12,5 @@ protocol MTMessageProtocol: NSObjectProtocol {
     func isMine() -> Bool
     func getMsgStatus() -> MTChatEnums.MessageStatus
     func getUser() -> MTUserType?
+    func getTextConten() -> NSMutableAttributedString?
 }

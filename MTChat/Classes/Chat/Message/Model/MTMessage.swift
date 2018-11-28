@@ -13,6 +13,10 @@ import UIKit
 }
 
 extension MTMessage: MTMessageProtocol {
+    func getTextConten() -> NSMutableAttributedString? {
+        return nil
+    }
+    
     func getMsgStatus() -> MTChatEnums.MessageStatus {
         return .msgInit
     }
