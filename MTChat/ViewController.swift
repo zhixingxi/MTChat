@@ -8,16 +8,18 @@
 
 import UIKit
 
+import Closures
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     @IBAction func pushToChat(_ sender: UIButton) {
         
         let vc = MTChatController()
+    
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

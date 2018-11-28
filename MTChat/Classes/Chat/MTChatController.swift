@@ -10,7 +10,6 @@ import UIKit
 import IQKeyboardManagerSwift
 
 class MTChatController: UIViewController {
-    
     //MARK: - Property
     /// 决定是否停止录
     var finishRecordingVoice: Bool = true

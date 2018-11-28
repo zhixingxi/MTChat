@@ -12,6 +12,6 @@ pod 'SVProgressHUD'
 pod 'Toast-Swift', '~> 4.0.0'
 pod 'IQKeyboardManagerSwift'
 pod 'Kingfisher', '~> 4.10.1'
-pod 'SwiftDate', '~> 5.0.13'
 pod 'MJRefresh'
+pod 'Closures'
 end

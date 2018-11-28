@@ -32,4 +32,19 @@ public struct MTChatEnums {
         case coupons    // 卡券
     }
     
+    /// 消息类型
+    public enum MessageType: Int {
+        case text //文字
+        case image //图片
+        case voice //语音
+        case redpacket //红包
+        case time //时间
+    }
+    
+    public enum MessageStatus {
+        case msgInit // 初始化
+        case sending //发送中
+        case sendSuccess // 发送成功
+        case sendFailed // 发送失败
+    }
 }

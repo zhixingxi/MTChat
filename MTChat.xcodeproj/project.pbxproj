@@ -17,16 +17,6 @@
 		B234747321ABE25C00C2689B /* MTChatBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747221ABE25C00C2689B /* MTChatBarView.swift */; };
 		B234747721ABE3EC00C2689B /* MTChatConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747621ABE3EC00C2689B /* MTChatConstant.swift */; };
 		B234747921ABE4E000C2689B /* MTChatEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747821ABE4E000C2689B /* MTChatEnums.swift */; };
-		B234748821ABE61000C2689B /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747D21ABE61000C2689B /* UIScrollView.swift */; };
-		B234748921ABE61000C2689B /* UIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747E21ABE61000C2689B /* UIImagePickerController.swift */; };
-		B234748A21ABE61000C2689B /* UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234747F21ABE61000C2689B /* UIGestureRecognizer.swift */; };
-		B234748B21ABE61000C2689B /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748021ABE61000C2689B /* UIBarButtonItem.swift */; };
-		B234748C21ABE61000C2689B /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748121ABE61000C2689B /* UICollectionView.swift */; };
-		B234748D21ABE61000C2689B /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748221ABE61000C2689B /* UITableView.swift */; };
-		B234748E21ABE61000C2689B /* UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748321ABE61000C2689B /* UIPickerView.swift */; };
-		B234748F21ABE61000C2689B /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748421ABE61000C2689B /* Core.swift */; };
-		B234749021ABE61000C2689B /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748521ABE61000C2689B /* UIControl.swift */; };
-		B234749121ABE61000C2689B /* KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234748621ABE61000C2689B /* KVO.swift */; };
 		B234749321ABE62900C2689B /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749221ABE62900C2689B /* Then.swift */; };
 		B234749621ABE89300C2689B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749521ABE89300C2689B /* UIColorExtension.swift */; };
 		B234749921ABF4F200C2689B /* MTLogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234749821ABF4F200C2689B /* MTLogUtil.swift */; };
@@ -62,6 +52,7 @@
 		B23474EB21AD3FFC00C2689B /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B23474E921AD3FFC00C2689B /* Expression.bundle */; };
 		B23474EC21AD3FFC00C2689B /* Expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = B23474EA21AD3FFC00C2689B /* Expression.plist */; };
 		B23474EF21AD474400C2689B /* MTChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474EE21AD474400C2689B /* MTChatTools.swift */; };
+		B23474F321AE2CB000C2689B /* MTMessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23474F221AE2CB000C2689B /* MTMessageProtocol.swift */; };
 		DA59AF76E664A602A15DB872 /* Pods_MTChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9530A94A671CABA0310AB781 /* Pods_MTChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,17 +70,6 @@
 		B234747221ABE25C00C2689B /* MTChatBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatBarView.swift; sourceTree = "<group>"; };
 		B234747621ABE3EC00C2689B /* MTChatConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatConstant.swift; sourceTree = "<group>"; };
 		B234747821ABE4E000C2689B /* MTChatEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatEnums.swift; sourceTree = "<group>"; };
-		B234747D21ABE61000C2689B /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
-		B234747E21ABE61000C2689B /* UIImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImagePickerController.swift; sourceTree = "<group>"; };
-		B234747F21ABE61000C2689B /* UIGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureRecognizer.swift; sourceTree = "<group>"; };
-		B234748021ABE61000C2689B /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
-		B234748121ABE61000C2689B /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
-		B234748221ABE61000C2689B /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
-		B234748321ABE61000C2689B /* UIPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPickerView.swift; sourceTree = "<group>"; };
-		B234748421ABE61000C2689B /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
-		B234748521ABE61000C2689B /* UIControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
-		B234748621ABE61000C2689B /* KVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVO.swift; sourceTree = "<group>"; };
-		B234748721ABE61000C2689B /* Closures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Closures.h; sourceTree = "<group>"; };
 		B234749221ABE62900C2689B /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		B234749521ABE89300C2689B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		B234749821ABF4F200C2689B /* MTLogUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTLogUtil.swift; sourceTree = "<group>"; };
@@ -140,6 +120,7 @@
 		B23474E921AD3FFC00C2689B /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
 		B23474EA21AD3FFC00C2689B /* Expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expression.plist; sourceTree = "<group>"; };
 		B23474EE21AD474400C2689B /* MTChatTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTChatTools.swift; sourceTree = "<group>"; };
+		B23474F221AE2CB000C2689B /* MTMessageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMessageProtocol.swift; sourceTree = "<group>"; };
 		CF4C5237533E91AB73127378 /* Pods-MTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.release.xcconfig"; sourceTree = "<group>"; };
 		E7AEFD258B1352A261443C3E /* Pods-MTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTChat/Pods-MTChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,7 +248,6 @@
 			isa = PBXGroup;
 			children = (
 				B234747021ABE1BA00C2689B /* MTUserType.swift */,
-				B23474A421ACDD3100C2689B /* MTEmotionType.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -297,35 +277,8 @@
 			children = (
 				B23474B221AD2D0E00C2689B /* TZImagePickerController */,
 				B234749421ABE62D00C2689B /* Then */,
-				B234747B21ABE61000C2689B /* Closures */,
 			);
 			path = Vendor;
-			sourceTree = "<group>";
-		};
-		B234747B21ABE61000C2689B /* Closures */ = {
-			isa = PBXGroup;
-			children = (
-				B234747C21ABE61000C2689B /* Source */,
-				B234748721ABE61000C2689B /* Closures.h */,
-			);
-			path = Closures;
-			sourceTree = "<group>";
-		};
-		B234747C21ABE61000C2689B /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				B234747D21ABE61000C2689B /* UIScrollView.swift */,
-				B234747E21ABE61000C2689B /* UIImagePickerController.swift */,
-				B234747F21ABE61000C2689B /* UIGestureRecognizer.swift */,
-				B234748021ABE61000C2689B /* UIBarButtonItem.swift */,
-				B234748121ABE61000C2689B /* UICollectionView.swift */,
-				B234748221ABE61000C2689B /* UITableView.swift */,
-				B234748321ABE61000C2689B /* UIPickerView.swift */,
-				B234748421ABE61000C2689B /* Core.swift */,
-				B234748521ABE61000C2689B /* UIControl.swift */,
-				B234748621ABE61000C2689B /* KVO.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		B234749421ABE62D00C2689B /* Then */ = {
@@ -356,6 +309,7 @@
 		B23474AD21ACE9F000C2689B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B23474A421ACDD3100C2689B /* MTEmotionType.swift */,
 				B23474AE21ACEA0000C2689B /* MTChatEmotion.swift */,
 			);
 			path = Model;
@@ -400,6 +354,8 @@
 		B23474E421AD3A1A00C2689B /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				B23474F121AE2C7800C2689B /* View */,
+				B23474F021AE2C6700C2689B /* Model */,
 				B23474E521AD3A2E00C2689B /* MTChatMessageController.swift */,
 			);
 			path = Message;
@@ -428,6 +384,21 @@
 				B23474EE21AD474400C2689B /* MTChatTools.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		B23474F021AE2C6700C2689B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B23474F221AE2CB000C2689B /* MTMessageProtocol.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B23474F121AE2C7800C2689B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,25 +498,25 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MTChat/Pods-MTChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Closures/Closures.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Closures.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
@@ -563,13 +534,13 @@
 			files = (
 				B23474D421AD2D0F00C2689B /* NSBundle+TZImagePicker.m in Sources */,
 				B23474A121AC10CD00C2689B /* MTChatHorizontalLayout.swift in Sources */,
+				B23474F321AE2CB000C2689B /* MTMessageProtocol.swift in Sources */,
 				B23474E621AD3A2E00C2689B /* MTChatMessageController.swift in Sources */,
 				B23474AC21ACE9AF00C2689B /* MTEmotionHelp.swift in Sources */,
 				B23474D121AD2D0F00C2689B /* TZAssetCell.m in Sources */,
 				B234745921ABDA4300C2689B /* ViewController.swift in Sources */,
 				B23474E121AD31ED00C2689B /* UITextViewExtension.swift in Sources */,
 				B234747121ABE1BA00C2689B /* MTUserType.swift in Sources */,
-				B234749121ABE61000C2689B /* KVO.swift in Sources */,
 				B234749921ABF4F200C2689B /* MTLogUtil.swift in Sources */,
 				B23474DD21AD2D0F00C2689B /* TZLocationManager.m in Sources */,
 				B23474E321AD357D00C2689B /* MTChatController.swift in Sources */,
@@ -577,33 +548,24 @@
 				B234745721ABDA4300C2689B /* AppDelegate.swift in Sources */,
 				B23474EF21AD474400C2689B /* MTChatTools.swift in Sources */,
 				B234749621ABE89300C2689B /* UIColorExtension.swift in Sources */,
-				B234748F21ABE61000C2689B /* Core.swift in Sources */,
 				B234749D21ABFDF900C2689B /* MTChatNoticeName.swift in Sources */,
 				B23474D521AD2D0F00C2689B /* UIView+Layout.m in Sources */,
 				B23474D621AD2D0F00C2689B /* TZPhotoPreviewController.m in Sources */,
-				B234748A21ABE61000C2689B /* UIGestureRecognizer.swift in Sources */,
 				B23474DE21AD2D0F00C2689B /* TZGifPhotoPreviewController.m in Sources */,
 				B234746E21ABE11100C2689B /* MTChatBarController.swift in Sources */,
 				B234747921ABE4E000C2689B /* MTChatEnums.swift in Sources */,
 				B23474DA21AD2D0F00C2689B /* TZPhotoPickerController.m in Sources */,
-				B234748E21ABE61000C2689B /* UIPickerView.swift in Sources */,
-				B234748C21ABE61000C2689B /* UICollectionView.swift in Sources */,
 				B23474DB21AD2D0F00C2689B /* TZPhotoPreviewCell.m in Sources */,
 				B23474D021AD2D0F00C2689B /* TZImageCropManager.m in Sources */,
 				B23474D321AD2D0F00C2689B /* TZAssetModel.m in Sources */,
 				B234749321ABE62900C2689B /* Then.swift in Sources */,
 				B23474D921AD2D0F00C2689B /* TZImageManager.m in Sources */,
 				B23474D221AD2D0F00C2689B /* TZVideoPlayerController.m in Sources */,
-				B234749021ABE61000C2689B /* UIControl.swift in Sources */,
 				B23474B121ACF19C00C2689B /* MTChatVoiceView.swift in Sources */,
 				B23474A721ACDF3D00C2689B /* MTChatEmotionCell.swift in Sources */,
-				B234748921ABE61000C2689B /* UIImagePickerController.swift in Sources */,
 				B23474A321ACD24400C2689B /* MTChatMoreView.swift in Sources */,
-				B234748B21ABE61000C2689B /* UIBarButtonItem.swift in Sources */,
 				B23474DC21AD2D0F00C2689B /* TZImagePickerController.m in Sources */,
-				B234748821ABE61000C2689B /* UIScrollView.swift in Sources */,
 				B23474A921ACE08A00C2689B /* MTChatEmotionView.swift in Sources */,
-				B234748D21ABE61000C2689B /* UITableView.swift in Sources */,
 				B234749B21ABF9CB00C2689B /* UIViewExtension.swift in Sources */,
 				B23474A521ACDD3100C2689B /* MTEmotionType.swift in Sources */,
 				B23474AF21ACEA0000C2689B /* MTChatEmotion.swift in Sources */,
